@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00ff88;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.assistant-card {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 255, 136, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 5px solid #00ff88;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ff88;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #00ff88;
+}
+
+.info p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.chat-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.bot {
+    background: rgba(0, 255, 136, 0.2);
+    align-self: flex-start;
+    border-top-left-radius: 5px;
+}
+
+.message.user {
+    background: rgba(0, 150, 255, 0.2);
+    align-self: flex-end;
+    margin-left: auto;
+    border-top-right-radius: 5px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-area button {
+    background: #00ff88;
+    color: black;
+    border: none;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    background: #00cc6a;
+    transform: scale(1.05);
+}
+
+.motivation-box {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid gold;
+    text-align: center;
+}
+
+.motivation-box h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#motivation-text {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #fff;
+    font-style: italic;
+}
+
+#new-motivation {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#new-motivation:hover {
+    background: #ffcc00;
+}
+
+.customize {
+    background: rgba(100, 150, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border-left: 5px solid #6496ff;
+}
+
+.customize h3 {
+    color: #6496ff;
+    margin-bottom: 15px;
+}
+
+.customize input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+#update-btn {
+    background: #6496ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#update-btn:hover {
+    background: #4a7dff;
+}
+
+footer {
+    text-align: center;
+    color: #aaa;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 10px;
+}
+
+#mic-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  width: 60px;
+  border-radius: 40%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mic-btn.listening {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,77,77,0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(255,77,77,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,77,77,0); }
+}
