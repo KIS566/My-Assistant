@@ -1,0 +1,42 @@
+{
+  "greeting": {
+    "keywords": ["hi", "hello", "hey", "hii", "yo", "namaste"],
+    "replies": [
+      "Heyyy Kishan Broo.. 👋 welcome!",
+      "Hello Kishan Broo.. 😊 kaise ho?",
+      "Hi! Kishan Broo.. Batao kya baat karein?"
+    ]
+  },
+  
+  "sad": {
+    "keywords": ["sad", "tension", "low", "stress"],
+    "replies": [
+      "Sun ❤️ sab theek ho jayega",
+      "Tension mat lo, main hoon 🤝"
+    ]
+  },
+  
+  "coding": {
+    "keywords": ["code", "coding", "html", "css", "js", "error"],
+    "replies": [
+      "Coding mode ON 💻 bata problem",
+      "Developer spotted 😎"
+    ]
+  },
+  
+  "study": {
+    "keywords": ["study", "padh", "exam"],
+    "replies": [
+      "Padhna tough lagta hai par future bright 📘",
+      "Kaunsa subject?"
+    ]
+  },
+  
+  "fallback": {
+    "keywords": [],
+    "replies": [
+      "Samajh raha hoon 😊 thoda aur batao",
+      "Main yahin hoon, likhte raho 💙"
+    ]
+  }
+}
